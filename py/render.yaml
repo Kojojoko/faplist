@@ -4,6 +4,7 @@ services:
     env: python
     buildCommand: ""
     startCommand: gunicorn app:app
+    rootDir:py
     envVars:
       - key: FLASK_ENV
         value: production
